@@ -1,21 +1,21 @@
-// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
-// Your use of Altera Corporation's design tools, logic functions 
-// and other software and tools, and its AMPP partner logic 
+// Copyright (C) 2021  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
 // functions, and any output files from any of the foregoing 
 // (including device programming or simulation files), and any 
 // associated documentation or information are expressly subject 
-// to the terms and conditions of the Altera Program License 
-// Subscription Agreement, the Altera Quartus II License Agreement,
-// the Altera MegaCore Function License Agreement, or other 
-// applicable license agreement, including, without limitation, 
-// that your use is for the sole purpose of programming logic 
-// devices manufactured by Altera and sold by Altera or its 
-// authorized distributors.  Please refer to the applicable 
-// agreement for further details.
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
 
-// PROGRAM		"Quartus II 64-Bit"
-// VERSION		"Version 15.0.0 Build 145 04/22/2015 SJ Web Edition"
-// CREATED		"Tue Feb  2 06:28:48 2021"
+// PROGRAM		"Quartus Prime"
+// VERSION		"Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition"
+// CREATED		"Thu Mar 31 23:04:49 2022"
 
 module SL2_32(
 	I,
@@ -26,7 +26,8 @@ module SL2_32(
 input wire	[31:0] I;
 output wire	[31:0] O;
 
-wire	Ground;
+wire	Ground0;
+wire	Ground1;
 wire	[31:0] O_ALTERA_SYNTHESIZED;
 
 
@@ -34,12 +35,12 @@ wire	[31:0] O_ALTERA_SYNTHESIZED;
 
 
 SameBit	b2v_bit00(
-	.Ain(Ground),
+	.Ain(Ground0),
 	.Aout(O_ALTERA_SYNTHESIZED[0]));
 
 
 SameBit	b2v_bit01(
-	.Ain(Ground),
+	.Ain(Ground1),
 	.Aout(O_ALTERA_SYNTHESIZED[1]));
 
 
@@ -195,7 +196,7 @@ SameBit	b2v_bit31(
 
 
 assign	O = O_ALTERA_SYNTHESIZED;
-assign	Ground = 0;
-assign	Ground = 0;
+assign	Ground0 = 0;
+assign	Ground1 = 0;
 
 endmodule
