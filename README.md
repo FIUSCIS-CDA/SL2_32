@@ -16,7 +16,7 @@ Y   |     32
 
 #### DESCRIPTION
        Takes  a 32-bit input A, and shifts it left by 2.  Works for Two's Com-
-       pliment values.
+       plement values.
 
 #### AUTHOR
        Alexander T Pastoriza
