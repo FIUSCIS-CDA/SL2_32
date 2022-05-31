@@ -15,19 +15,19 @@
 
 // PROGRAM		"Quartus Prime"
 // VERSION		"Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
-// CREATED		"Tue May 17 10:26:14 2022"
+// CREATED		"Tue May 31 08:40:33 2022"
 
 module SL2_32(
-	I,
-	O
+	A,
+	Y
 );
 
 
-input wire	[31:0] I;
-output wire	[31:0] O;
+input wire	[31:0] A;
+output wire	[31:0] Y;
 
 wire	Ground;
-wire	[31:0] O_ALTERA_SYNTHESIZED;
+wire	[31:0] Y_ALTERA_SYNTHESIZED;
 
 
 
@@ -35,166 +35,166 @@ wire	[31:0] O_ALTERA_SYNTHESIZED;
 
 SameBit	b2v_bit00(
 	.Ain(Ground),
-	.Aout(O_ALTERA_SYNTHESIZED[0]));
+	.Aout(Y_ALTERA_SYNTHESIZED[0]));
 
 
 SameBit	b2v_bit01(
 	.Ain(Ground),
-	.Aout(O_ALTERA_SYNTHESIZED[1]));
+	.Aout(Y_ALTERA_SYNTHESIZED[1]));
 
 
 SameBit	b2v_bit02(
-	.Ain(I[0]),
-	.Aout(O_ALTERA_SYNTHESIZED[2]));
+	.Ain(A[0]),
+	.Aout(Y_ALTERA_SYNTHESIZED[2]));
 
 
 SameBit	b2v_bit03(
-	.Ain(I[1]),
-	.Aout(O_ALTERA_SYNTHESIZED[3]));
+	.Ain(A[1]),
+	.Aout(Y_ALTERA_SYNTHESIZED[3]));
 
 
 SameBit	b2v_bit04(
-	.Ain(I[2]),
-	.Aout(O_ALTERA_SYNTHESIZED[4]));
+	.Ain(A[2]),
+	.Aout(Y_ALTERA_SYNTHESIZED[4]));
 
 
 SameBit	b2v_bit05(
-	.Ain(I[3]),
-	.Aout(O_ALTERA_SYNTHESIZED[5]));
+	.Ain(A[3]),
+	.Aout(Y_ALTERA_SYNTHESIZED[5]));
 
 
 SameBit	b2v_bit06(
-	.Ain(I[4]),
-	.Aout(O_ALTERA_SYNTHESIZED[6]));
+	.Ain(A[4]),
+	.Aout(Y_ALTERA_SYNTHESIZED[6]));
 
 
 SameBit	b2v_bit07(
-	.Ain(I[5]),
-	.Aout(O_ALTERA_SYNTHESIZED[7]));
+	.Ain(A[5]),
+	.Aout(Y_ALTERA_SYNTHESIZED[7]));
 
 
 SameBit	b2v_bit08(
-	.Ain(I[6]),
-	.Aout(O_ALTERA_SYNTHESIZED[8]));
+	.Ain(A[6]),
+	.Aout(Y_ALTERA_SYNTHESIZED[8]));
 
 
 SameBit	b2v_bit09(
-	.Ain(I[7]),
-	.Aout(O_ALTERA_SYNTHESIZED[9]));
+	.Ain(A[7]),
+	.Aout(Y_ALTERA_SYNTHESIZED[9]));
 
 
 SameBit	b2v_bit10(
-	.Ain(I[8]),
-	.Aout(O_ALTERA_SYNTHESIZED[10]));
+	.Ain(A[8]),
+	.Aout(Y_ALTERA_SYNTHESIZED[10]));
 
 
 SameBit	b2v_bit11(
-	.Ain(I[9]),
-	.Aout(O_ALTERA_SYNTHESIZED[11]));
+	.Ain(A[9]),
+	.Aout(Y_ALTERA_SYNTHESIZED[11]));
 
 
 SameBit	b2v_bit12(
-	.Ain(I[10]),
-	.Aout(O_ALTERA_SYNTHESIZED[12]));
+	.Ain(A[10]),
+	.Aout(Y_ALTERA_SYNTHESIZED[12]));
 
 
 SameBit	b2v_bit13(
-	.Ain(I[11]),
-	.Aout(O_ALTERA_SYNTHESIZED[13]));
+	.Ain(A[11]),
+	.Aout(Y_ALTERA_SYNTHESIZED[13]));
 
 
 SameBit	b2v_bit14(
-	.Ain(I[12]),
-	.Aout(O_ALTERA_SYNTHESIZED[14]));
+	.Ain(A[12]),
+	.Aout(Y_ALTERA_SYNTHESIZED[14]));
 
 
 SameBit	b2v_bit15(
-	.Ain(I[13]),
-	.Aout(O_ALTERA_SYNTHESIZED[15]));
+	.Ain(A[13]),
+	.Aout(Y_ALTERA_SYNTHESIZED[15]));
 
 
 SameBit	b2v_bit16(
-	.Ain(I[14]),
-	.Aout(O_ALTERA_SYNTHESIZED[16]));
+	.Ain(A[14]),
+	.Aout(Y_ALTERA_SYNTHESIZED[16]));
 
 
 SameBit	b2v_bit17(
-	.Ain(I[15]),
-	.Aout(O_ALTERA_SYNTHESIZED[17]));
+	.Ain(A[15]),
+	.Aout(Y_ALTERA_SYNTHESIZED[17]));
 
 
 SameBit	b2v_bit18(
-	.Ain(I[16]),
-	.Aout(O_ALTERA_SYNTHESIZED[18]));
+	.Ain(A[16]),
+	.Aout(Y_ALTERA_SYNTHESIZED[18]));
 
 
 SameBit	b2v_bit19(
-	.Ain(I[17]),
-	.Aout(O_ALTERA_SYNTHESIZED[19]));
+	.Ain(A[17]),
+	.Aout(Y_ALTERA_SYNTHESIZED[19]));
 
 
 SameBit	b2v_bit20(
-	.Ain(I[18]),
-	.Aout(O_ALTERA_SYNTHESIZED[20]));
+	.Ain(A[18]),
+	.Aout(Y_ALTERA_SYNTHESIZED[20]));
 
 
 SameBit	b2v_bit21(
-	.Ain(I[19]),
-	.Aout(O_ALTERA_SYNTHESIZED[21]));
+	.Ain(A[19]),
+	.Aout(Y_ALTERA_SYNTHESIZED[21]));
 
 
 SameBit	b2v_bit22(
-	.Ain(I[20]),
-	.Aout(O_ALTERA_SYNTHESIZED[22]));
+	.Ain(A[20]),
+	.Aout(Y_ALTERA_SYNTHESIZED[22]));
 
 
 SameBit	b2v_bit23(
-	.Ain(I[21]),
-	.Aout(O_ALTERA_SYNTHESIZED[23]));
+	.Ain(A[21]),
+	.Aout(Y_ALTERA_SYNTHESIZED[23]));
 
 
 SameBit	b2v_bit24(
-	.Ain(I[22]),
-	.Aout(O_ALTERA_SYNTHESIZED[24]));
+	.Ain(A[22]),
+	.Aout(Y_ALTERA_SYNTHESIZED[24]));
 
 
 SameBit	b2v_bit25(
-	.Ain(I[23]),
-	.Aout(O_ALTERA_SYNTHESIZED[25]));
+	.Ain(A[23]),
+	.Aout(Y_ALTERA_SYNTHESIZED[25]));
 
 
 SameBit	b2v_bit26(
-	.Ain(I[24]),
-	.Aout(O_ALTERA_SYNTHESIZED[26]));
+	.Ain(A[24]),
+	.Aout(Y_ALTERA_SYNTHESIZED[26]));
 
 
 SameBit	b2v_bit27(
-	.Ain(I[25]),
-	.Aout(O_ALTERA_SYNTHESIZED[27]));
+	.Ain(A[25]),
+	.Aout(Y_ALTERA_SYNTHESIZED[27]));
 
 
 SameBit	b2v_bit28(
-	.Ain(I[26]),
-	.Aout(O_ALTERA_SYNTHESIZED[28]));
+	.Ain(A[26]),
+	.Aout(Y_ALTERA_SYNTHESIZED[28]));
 
 
 SameBit	b2v_bit29(
-	.Ain(I[27]),
-	.Aout(O_ALTERA_SYNTHESIZED[29]));
+	.Ain(A[27]),
+	.Aout(Y_ALTERA_SYNTHESIZED[29]));
 
 
 SameBit	b2v_bit30(
-	.Ain(I[28]),
-	.Aout(O_ALTERA_SYNTHESIZED[30]));
+	.Ain(A[28]),
+	.Aout(Y_ALTERA_SYNTHESIZED[30]));
 
 
 SameBit	b2v_bit31(
-	.Ain(I[29]),
-	.Aout(O_ALTERA_SYNTHESIZED[31]));
+	.Ain(A[29]),
+	.Aout(Y_ALTERA_SYNTHESIZED[31]));
 
 
 
-assign	O = O_ALTERA_SYNTHESIZED;
+assign	Y = Y_ALTERA_SYNTHESIZED;
 assign	Ground = 0;
 assign	Ground = 0;
 
